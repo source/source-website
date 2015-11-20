@@ -1,0 +1,30 @@
+extends _layouts/primary
+
+block title
+  title Source App
+
+append vars
+  -var bodyClass = 'white-header bg-green-gradient';
+  
+  
+block content
+  .section.bg-white
+    .row
+      .column
+        h2.about-lead.margin-bottom-less We made the app that we wanted, and now we want to share it with you
+    .row
+      .column.large-6
+        h2.about-quote.margin-bottom-less "Source does one thing, and it does it well. Share and read articles with your friends."
+      .column.large-6
+        p We created SOURCE because we were tired of scrolling through our news feed and being distracted with the social aspect when we just wanted to read and share interesting articles with each other.
+        p Combined with a bookmarking mindset we wanted an easy places for people to collect their sources and share them with friends.
+    .row
+      .column.large-6
+        p The entire project is open source.  We want to encourage people to build out the functions that they are interested in.
+        p We respect your privacy and we do not want to sell your data - we want to sell it back to you and help you make new discoveries about yourself.
+        p - The Source Team
+      .column.large-6
+        .press-kit
+          .background-contain(style="background-image: url('/images/press-kit.svg'); height:10em;")
+          button.secondary-button Press kit (coming soon)
+          button.primary-button Download One Sheet (coming soon)

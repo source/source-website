@@ -1,0 +1,53 @@
+.medium-white-fade-top {
+  @media #{$medium-up} {
+    box-shadow: 0 0 300px 300px #fff;
+    position: relative;
+    z-index: 0
+  }
+}
+
+.footer-label {
+  @extend .white;
+  font-size: 0.6em;
+  display: inline-block;
+  background: $blue-light;
+  background: linear-gradient(to bottom, $blue-light, darken($blue-light, 8%));
+  padding: 0 5px 1px;
+  border-radius: 10px;
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+}
+
+.language-selector {
+  @extend .white-opacity;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: normal;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xNDcgMzEgMjQgMyI+PHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItMTMyLDMxIC0xMzUsMzQgLTEzOCwzMSIvPjwvc3ZnPg==);
+  background-size: 35px;
+  background-color: transparent;
+  &:hover {
+    background-color: rgba(255,255,255,0.05);
+    border-color: #FFFFFF;
+  }
+}
+
+.footer-logo {
+  background-image: url('../images/bitpay-logo-primary.svg');
+  width: 60px;
+  margin-top: 0;
+}
+
+.footer-sublinks {
+  margin-right: 1.375rem;
+  margin-left: 0 !important;
+  margin-bottom: .5em;
+}

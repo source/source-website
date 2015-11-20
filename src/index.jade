@@ -1,0 +1,49 @@
+extends _layouts/primary
+
+block title
+  title Source App
+
+append vars
+  -var bodyClass = 'white-header bg-green-gradient';
+
+block content
+  .background-element.text-center.opacity
+      
+  .padding-top-less.padding-bottom-less
+    .row
+      .column.large-10.large-offset-1.text-center
+          h1.white.fade-in.text-shadow Sign up for the Beta Today
+          h4.white.text-shadow.medium-8.medium-offset-2.fade-in.delay-2 Sign up for the beta today or check out the source code
+          .mc_embed_signup
+            form.mc-embedded-subscribe-form.validate(action='//source.us11.list-manage.com/subscribe/post?u=fef3b0be540db7181033cd340&id=2dca5c0008', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+              .mc_embed_signup_scroll
+                input.email.mail-input(type='email', value='', name='EMAIL', placeholder='email address', required='')        
+                input.mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
+                div
+                  input.send-away(type='text', name='b_fef3b0be540db7181033cd340_2dca5c0008', tabindex='-1', value='')        
+          
+  .section.border-bottom-gray.bg-white
+    .row
+      .column.large-6
+        h3.margin-top-source Bookmarking your favorite pages just got social
+        p.lead Browse headlines with ease every time you open the app.
+        p Whether you are saving the article for later or reading it right then and there, we make browsing articles a breeze.
+      .column.large-6
+        .h1.background-contain.unselectable(style="background-image: url('/images/phone-proof.jpg'); width: 100%; height: 14em;)")
+          
+  .section.border-bottom-gray.bg-white
+    .row
+      .column.large-6
+        .h1.background-contain.unselectable(style="background-image: url('/images/phone-proof-2.jpg'); width: 100%; height: 14em;)")
+      .column.large-6
+        h3.margin-top-source.small-only-margin-top-less Distraction Free Reading Mode
+        p A distraction free reading mode allows you to easily digest articles one by one. Your customizable settings give you control over how you view your content.
+          
+  .section.border-bottom-gray.bg-white
+    .row
+      .column.large-6
+        h3.margin-top-source Find new Content
+        p Browse top rated and recently added articles from all over Source. Looking for more people to share with? Connecting with others is easy.
+      .column.large-6
+        .h1.background-contain.unselectable(style="background-image: url('/images/phone-proof-3.jpg'); width: 100%; height: 14em;)")
+      
